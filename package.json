@@ -2,7 +2,7 @@
   "name": "lru-cache",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lru.js",
   "scripts": {
     "start": "nodemon --exec babel-node lru.js",
     "test": "jest"
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/robin-lc/lru-cache.git"
   },
-  "author": "",
+  "author": "Robin LE CORRE",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/robin-lc/lru-cache/issues"

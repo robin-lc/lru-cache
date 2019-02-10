@@ -17,7 +17,6 @@ test('set()', () => {
 	expect(lru.tail.value).toBe('a');
 });
 
-
 test('get()', () => {
 
 	const lru = new LRU();
@@ -25,8 +24,6 @@ test('get()', () => {
 	lru.set("A", "a");
 	lru.set("B", "b");
 	lru.set("C", "c"); 
-	expect(lru.head.value).toBe('c');
-	expect(lru.tail.value).toBe('a');
 	//current cache: "C, B, A"
 
 	lru.get('B');
@@ -52,9 +49,7 @@ test('del()', () => {
 
 	lru.set("A", "a");
 	lru.set("B", "b");
-	lru.set("C", "c"); 
-	expect(lru.head.value).toBe('c');
-	expect(lru.tail.value).toBe('a');
+	lru.set("C", "c");
 	//current cache: "C, B, A"
 
 	lru.del('C');
