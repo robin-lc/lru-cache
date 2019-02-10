@@ -42,6 +42,8 @@ test('get()', () => {
 	expect(lru.head.value).toBe('a');
 	expect(lru.tail.value).toBe('c');
 	//current cache: "A, B, C"
+
+	expect(lru.get('D')).toBe(false);
 });
 
 test('del()', () => {

@@ -25,7 +25,7 @@ class LRU {
 
 	get(key) {
 		
-		if(this.cache[key] !== null) {
+		if(this.cache[key] !== undefined) {
 
 			const value = this.cache[key].value;
 
