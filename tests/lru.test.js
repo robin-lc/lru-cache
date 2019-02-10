@@ -65,3 +65,14 @@ test('del()', () => {
 	expect(lru.tail.value).toBe('b');
 	//current cache: "B"
 });
+
+test('has()', () => {
+
+	const lru = new LRU();
+
+	lru.set("A", "a");
+	lru.set("B", "b");
+	lru.set("C", "c");
+	expect(lru.has('B')).toBe(true);
+	expect(lru.has('D')).toBe(false);
+});

@@ -39,6 +39,7 @@ class LRU {
 	}
 
 	has(key) {
+		return (this.cache[key] !== undefined) ? true : false;
 	}
 
 	del(key) {
