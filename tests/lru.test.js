@@ -61,6 +61,8 @@ test('del()', () => {
 	expect(lru.head.value).toBe('b');
 	expect(lru.tail.value).toBe('b');
 	//current cache: "B"
+
+	expect(lru.del('D')).toBe(false);
 });
 
 test('has()', () => {
